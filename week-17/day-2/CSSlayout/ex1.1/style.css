@@ -1,0 +1,26 @@
+/*the items should be fixed width and height
+*/
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green {
+    width: 200px;
+    height: 200px;
+    background-color: #62DF2A;
+}
+
+.yellow {
+    width: 200px;
+    height: 200px;
+    background-color: #FFDE2E;
+}
+
+.purple {
+    width: 200px;
+    height: 200px;
+    background-color: #B22DE0;
+}

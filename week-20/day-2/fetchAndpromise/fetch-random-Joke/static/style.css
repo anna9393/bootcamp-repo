@@ -1,0 +1,37 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: darkcyan;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: powderblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.joke {
+    margin: 20px;
+    width: 600px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    margin: 40px;
+    background-color: aliceblue;
+    border: 1px solid hotpink;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+}

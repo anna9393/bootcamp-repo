@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Delayed Click</title>
+</head>
+
+<body>
+    <button>Click</button>
+    <script>
+        const btn = document.querySelector('button');
+        const body = document.querySelector('body');
+
+        btn.addEventListener('click', () => {
+            let p = document.createElement('p');
+            let delay = 2000;
+            body.appendChild(p);
+            setTimeout(() => {
+                p.textContent = `${delay / 1000} seconds ellapsed`
+            }, delay);
+        });
+    </script>
+</body>
+
+</html>

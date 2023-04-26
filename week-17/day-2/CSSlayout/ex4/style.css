@@ -1,0 +1,64 @@
+/*The layout should be centered on the page.
+The layout should have fixed width.
+When picking the semantically correct element, consider the roles of the boxes:
+Purple: Header
+Cyan: Navigation links
+Yellow: Main Content
+Green: Sidebar (not main content*/
+
+.container {
+    width: 95%;
+    height: 1200px;
+    margin: 5px auto;
+    padding: 40px;
+    border: 5px solid #3D3113;
+    border-radius: 20px;
+    display: inline-block;
+    justify-content: center;
+}
+
+.purple {
+    width: 100%;
+    height: 100px;
+    background-color: #AC4FC7;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cyan1 {
+    width: 140px;
+    height: 50px;
+    background-color: #36FFD7;
+    margin-left: 20px;
+}
+
+.cyan2 {
+    width: 100px;
+    height: 50px;
+    background-color: #36FFD7;
+    margin-left: 20px;
+}
+
+.cyan3 {
+    width: 120px;
+    height: 50px;
+    background-color: #36FFD7;
+    margin-left: 20px;
+
+}
+
+.yellow {
+    background-color: #FAD224;
+    width: 70%;
+    height: 1100px;
+}
+
+.green {
+    width: 30%;
+    height: 1100px;
+    background-color: #5AE014;
+    margin-left: 70%;
+    position: relative;
+    bottom: 1100px;
+}

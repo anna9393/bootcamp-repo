@@ -1,0 +1,46 @@
+body {
+    background-color: #2B245C;
+}
+
+.container {
+    width: 800px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: 140px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: large;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    border-style: hidden;
+}
+
+.blue {
+    background-color: #2C2680;
+    box-shadow: 2px 5px 3px #26216d,
+        2px 5px 5px rgba(0, 0, 0, .35);
+}
+
+.green {
+    background-color: #26804E;
+    box-shadow: 2px 5px 3px #114b2b,
+        2px 5px 5px rgba(0, 0, 0, .35);
+}
+
+.red {
+    background-color: #801010;
+    box-shadow: 2px 5px 3px #5f0a0a,
+        2px 5px 5px rgba(0, 0, 0, .35);
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+button:active {
+    filter: brightness(90%);
+}

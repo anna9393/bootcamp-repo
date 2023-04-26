@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop: CreateElement</title>
+</head>
+
+<body>
+    <ul class="asteroids">
+        <li id="b325" class="asteroid">The King</li>
+        <li class="asteroid b326">The Conceited Man</li>
+    </ul>
+    <div class="container"></div>
+
+    <!-- You can work in the html or in a separate js file.
+      Add an item that says 'The Green Fox' to the asteroid list.
+      Add an item that says 'The Lamplighter' to the asteroid list.
+      Add a heading saying 'I can add elements to the DOM!' to the .container.
+      Add an image, any image, to the container. -->
+
+    <script>
+        const ulTag = document.querySelector('ul');
+        const container = document.querySelector('div.container');
+        const liGreenFox = document.createElement('li');
+        const liLamplighter = document.createElement('li');
+        const newHeading = document.createElement('h1');
+        const newImg = document.createElement('img');
+
+        liGreenFox.textContent = 'The Green Fox';
+        liLamplighter.textContent = 'The Lamplighter';
+        newHeading.textContent = 'I can add elements to the DOM!'
+        newImg.setAttribute('src', 'https://www.kindpng.com/picc/m/13-131680_autumn-png-image-autumn-tree-branch-png-transparent.png');
+
+        ulTag.appendChild(liGreenFox);
+        ulTag.appendChild(liLamplighter);
+        container.appendChild(newHeading);
+        container.appendChild(newImg);
+    </script>
+</body>
+
+</html>

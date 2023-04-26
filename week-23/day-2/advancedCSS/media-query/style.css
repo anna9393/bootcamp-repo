@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.green {
+    width: 25%;
+    height: 200px;
+    background-color: #62DF2A;
+}
+
+.yellow {
+    width: 50%;
+    height: 200px;
+    background-color: #FFDE2E;
+}
+
+.purple {
+    width: 25%;
+    height: 200px;
+    background-color: #B22DE0;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .green {
+        width: 33.3%;
+    }
+
+    .yellow {
+        width: 33.3%;
+    }
+
+    .purple {
+        width: 33.3%;
+    }
+}

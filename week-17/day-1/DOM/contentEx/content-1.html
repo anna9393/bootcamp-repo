@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop: innerHTML, textContent</title>
+</head>
+
+<body>
+    <p class="apple">apple</p>
+    <p class="balloon">banana</p>
+    <p class="cat">car</p>
+    <p class="animals">goat rabbit <strong>cat</strong> dog</p>
+
+    <!-- You can work in the html or in a separate js file. Like:
+    <script>
+    1)  Append the content of the last paragraph to the other paragraphs.
+    2)  Do the same again, but you should keep the cat strong.
+    </script>
+    -->
+    <script>
+        'use strict';
+        const lastParCont = document.querySelector('.animals').textContent;
+        const lastParInnerHTML = document.querySelector('.animals').innerHTML;
+        const paragraphs = document.querySelectorAll('p');
+
+        for (let i = 0; i < paragraphs.length - 1; i++) {
+            // ad 1: without <strong>cat</strong>
+
+            //paragraphs[i].textContent = paragraphs[i].textContent + ` ${lastParCont}`;
+
+            // ad 2: with <strong>cat</strong>
+            paragraphs[i].innerHTML = paragraphs[i].textContent + ` ${lastParInnerHTML}`;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+body {
+    margin: auto;
+}
+
+#main-form {
+    margin: auto;
+}
+
+.form-group {
+    width: 50%;
+}
+
+.form-control {
+    margin: 10px;
+}
+
+.radio-selection {
+    max-width: 10%;
+}
+
+#msg {
+    min-width: 500px;
+    min-height: 300px;
+}
